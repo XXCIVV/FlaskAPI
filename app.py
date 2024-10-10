@@ -9,6 +9,9 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
+
+
 @app.route('/uploads', methods=['GET', 'POST'])
 def upload_file():
     if 'file' not in request.files:  # Check if the 'file' key exists in the request
